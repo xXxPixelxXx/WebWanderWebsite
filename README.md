@@ -1,91 +1,104 @@
-# WebWander
+WebWander
 
-**Discover the internet one site at a time.**
+Discover the internet one site at a time.
 
-Official website for the WebWander Chrome extension. An interactive landing page that visualizes the web as a galaxy—stars are websites, threads are connections, and clusters are categories.
+WebWander is an interactive website that visualizes the internet as a galaxy.
+Each star represents a website, connections represent relationships, and clusters represent categories.
 
-## Project Structure
+The project powers the official landing page for the WebWander Chrome extension, allowing users to explore and discover interesting websites in a visual, interactive way.
 
-**GitHub repo** (`WebWander-website` — what you clone/push):
+Features
 
-```
+🌌 Galaxy Visualization – Websites displayed as stars in a navigable galaxy
+
+🔗 Connected Web – Related websites are linked together
+
+🧭 Explore Categories – Discover clusters of websites by topic
+
+🚀 Wander the Web – Randomly jump to new websites to explore
+
+✨ Interactive UI – Animated stars, glowing connections, and fullscreen navigation
+
+🧩 Chrome Extension Integration – Works alongside the WebWander browser extension
+
+Project Structure
 WebWander-website/
 ├── index.html
-├── css/styles.css
+├── css/
+│   └── styles.css
 ├── js/
-│   ├── config.example.js   # Template — copy to config.js and add keys
-│   ├── config.js           # Gitignored — Supabase + Chrome Web Store URL
 │   ├── data-loader.js
 │   ├── galaxy.js
 │   └── main.js
-├── data/sites.json
-├── supabase/schema.sql
+├── data/
+│   └── sites.json
 └── README.md
-```
 
-**Local dev folder** (`WebWander-website-dev` — sibling, never committed):
+Running Locally
 
-```
-WebWander-website-dev/      # Sibling to WebWander-website — NOT in Git
-├── js/config.js            # Your real config (copy into repo for local dev)
-├── sql/                    # Sensitive seeds, dumps
-├── notes.md                # Personal notes
-└── README.md               # Setup instructions
-```
+You can run the site locally using any simple web server.
 
-`config.js` is in `.gitignore`. Copy it from `WebWander-website-dev/js/config.js` after cloning, or create from `config.example.js`.
-
-## Supabase Integration
-
-The site fetches websites from your Supabase project:
-
-- **Tables used:** `community_sites`, `suggestions`
-- **Flow:** Loads community sites (score ≥ 0) + approved suggestions (score ≥ 5)
-- **Fallback:** Uses `data/sites.json` if Supabase fails
-- **Submit form:** Sends new suggestions to the `suggestions` table
-
-Configure in `js/config.js` (copy from `config.example.js`).
-
-## Build Status
-
-- [x] **Step 1** — Architecture & layout
-- [x] **Step 2** — Web galaxy visualization
-- [x] **Step 3** — Connect real website data
-- [x] **Step 4** — Wander the Web feature
-- [x] **Step 5** — Polish (glowing stars, animated links, fullscreen)
-
-## Local Development
-
-Open `index.html` in a browser, or use a simple local server:
-
-```bash
-# Python 3
+Python
 python -m http.server 8000
 
-# Node (if you have npx)
+Node
 npx serve .
-```
 
-Then visit `http://localhost:8000`.
 
-## Deploy to GitHub Pages
+Then open:
 
-1. Push this repo to GitHub
-2. Go to **Settings → Pages**
-3. Source: **Deploy from a branch**
-4. Branch: `main` (or `master`), folder: `/ (root)`
-5. Save — your site will be at `https://<username>.github.io/<repo-name>/`
+http://localhost:8000
 
-## Chrome Web Store Submission
+Deployment
 
-1. **Deploy the website first** (GitHub Pages above) — you need a live URL for the store listing
-2. Submit your extension to the Chrome Web Store, using your GitHub Pages URL as the homepage
-3. **After the extension is published**, add the store URL to `js/config.js`:
-   ```js
-   export const CHROME_WEB_STORE_URL = 'https://chromewebstore.google.com/detail/webwander/YOUR_EXTENSION_ID';
-   ```
-4. Push the update — "Get the Extension" will now link to the store
+The site can be deployed easily using GitHub Pages.
 
-## License
+Push the repository to GitHub
 
-MIT
+Open Settings → Pages
+
+Select Deploy from a branch
+
+Choose the main branch and / (root) folder
+
+Save
+
+Your site will be available at:
+
+https://<username>.github.io/<repo-name>/
+
+Chrome Extension
+
+WebWander also exists as a Chrome extension designed to help users discover interesting websites while browsing.
+
+The extension integrates with the WebWander ecosystem and provides quick access to website discovery features.
+
+Contributing
+
+Contributions are welcome.
+
+If you'd like to improve WebWander:
+
+Fork the repository
+
+Create a new branch
+
+Make your changes
+
+Submit a pull request
+
+Ideas for contributions include:
+
+Improving the galaxy visualization
+
+Adding new discovery features
+
+Expanding the website dataset
+
+UI/UX improvements
+
+Performance optimization
+
+License
+
+MIT License
