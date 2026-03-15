@@ -5,7 +5,7 @@
  */
 
 /** Chrome Web Store URL – add after publishing extension */
-export const CHROME_WEB_STORE_URL = '';
+export const CHROME_WEB_STORE_URL = 'https://chromewebstore.google.com/detail/webwander/pdfkhmleiakkemoompbmockjmknldohe';
 
 export const SUPABASE = {
     url: 'https://xofwgalripttxgvbqado.supabase.co',
