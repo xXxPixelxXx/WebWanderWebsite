@@ -15,9 +15,6 @@ npm-debug.log*
 # Dependencies (if you add them later)
 node_modules/
 
-# Keep Supabase keys out of version control
-js/config.js
-
-# Local dev folder (if ever placed inside this repo)
+# Local dev folder (if ever placed inside this repo) (if ever placed inside this repo)
 WebWander-website-dev/
 project-dev/
