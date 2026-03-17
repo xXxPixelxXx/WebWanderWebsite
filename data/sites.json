@@ -1,0 +1,22 @@
+[
+  {"name": "Khan Academy", "url": "https://www.khanacademy.org", "category": "learning"},
+  {"name": "MDN Web Docs", "url": "https://developer.mozilla.org", "category": "tech"},
+  {"name": "Hacker News", "url": "https://news.ycombinator.com", "category": "tech"},
+  {"name": "TED", "url": "https://www.ted.com", "category": "ideas"},
+  {"name": "Project Gutenberg", "url": "https://www.gutenberg.org", "category": "books"},
+  {"name": "Wikipedia", "url": "https://www.wikipedia.org", "category": "learning"},
+  {"name": "Bandcamp", "url": "https://bandcamp.com", "category": "music"},
+  {"name": "Dribbble", "url": "https://dribbble.com", "category": "design"},
+  {"name": "Archive.org", "url": "https://archive.org", "category": "learning"},
+  {"name": "Atlas Obscura", "url": "https://www.atlasobscura.com", "category": "travel"},
+  {"name": "99% Invisible", "url": "https://99percentinvisible.org", "category": "culture"},
+  {"name": "Niche", "url": "https://www.niche.com", "category": "fun"},
+  {"name": "Letterboxd", "url": "https://letterboxd.com", "category": "film"},
+  {"name": "Instructables", "url": "https://www.instructables.com", "category": "handcraft"},
+  {"name": "Coolors", "url": "https://coolors.co", "category": "design"},
+  {"name": "Duolingo", "url": "https://www.duolingo.com", "category": "learning"},
+  {"name": "itch.io", "url": "https://itch.io", "category": "gaming"},
+  {"name": "AllTrails", "url": "https://www.alltrails.com", "category": "nature"},
+  {"name": "Serious Eats", "url": "https://www.seriouseats.com", "category": "food"},
+  {"name": "Radio Garden", "url": "https://radio.garden", "category": "music"}
+]
